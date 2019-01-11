@@ -1,0 +1,28 @@
+ <p align="center">
+ &nbsp&nbsp <input type="checkbox" name="type_proc" value="نيباة"> نيابة  
+            <input type="checkbox" name="type_proc" value="إتلاف"> إتلاف 
+            <input type="checkbox" name="type_proc" value="سحب من الاشغال"> سحب من الاشغال  
+            <input type="checkbox" name="type_proc" value="سحب من المستورد"> سحب من المستورد 
+        </p>
+         <p align="center">
+ &nbsp&nbsp <input type="checkbox" name="type_proc" value="تحذير بالموقع الالكتروني"> تحذير بالموقع الالكتروني  
+            <input type="checkbox" name="type_proc" value="غرامة مبلغ"> غرامة مبلغ 
+            <input type="checkbox" name="type_proc" value="تعهد"> تعهد
+            <input type="checkbox" name="type_proc" value="حجز مدخلات"> حجز مدخلات
+        </p>
+          <p align="center">
+ &nbsp&nbsp <input type="checkbox" name="type_proc" value="تعميم تشديد الرقابة"> تعميم تشديد الرقابة  
+            <input type="checkbox" name="type_proc" value="كف خطاب"> كف خطاب 
+            <input type="checkbox" name="type_proc" value="تفتيش"> تفتيش
+            <input type="checkbox" name="type_proc" value="تفويض للنيابة"> تفويض للنيابة
+        </p><BR>
+
+         <p> <input type="file" name="pic1">
+           <input type="file" name="pic2">
+          </p>
+          <p> <input type="file" name="pic3">
+           <input type="file" name="pic4">
+          </p>
+              <p> <input type="file" name="pic5">
+           <input type="file" name="pic6">
+          </p>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>نظام القضاياء</title>
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <style type="text/css">
+  		body {
+  			font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  			color: #404040;
+  			background: #0ca3d2;
+ 		    text-align: rtl;
+  		}
+
+  		.about {
+  margin: 10px auto 40px;
+  padding: 4px;
+  width: 360px;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
+  color: #666;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links > a {
+  float: left;
+  width: 33.3%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author > a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+.contain {
+        border: 1px solid #dddddd ;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1px;
+        margin: 0 auto;
+        }
+        table {
+        width: 100%;
+        direction: rtl;
+        border: 1px solid #000000;
+
+        }
+        th {
+        background-color: #eee;
+        border: 1px solid #000000;
+
+        }
+        td {
+        border: 1px solid #000000; 
+
+        }
+
+</style>
+<body>
+<section class="about">
+    <p class="about-links">
+      <a href="/" target="_parent">الرئيسية</a>
+      <a href="/Search" target="_parent">بحث</a>
+      <a href="/AdminCPanel" target="_parent">دخول</a>
+    </p>
+  </section>
+  <section class="contain">
+    <table>
+      <tr>
+<th> م </th>
+<th> المصدر</th>
+<th>اسم المخالف</th>
+<th>نوع المخالفة</th>
+<th>الإجرات المتخذة في المخالف</th>
+<th>ملاحظات</th>
+<th>المرفقات</th>
+</tr>
+<tr>
+<% @views.each do |v| %>
+<td><%= v[:ID] %></td>
+<td><%= v[:src_vio] %></td>
+<td><%= v[:name_of_vio] %></td>
+<td><%= v[:violation] %></td>
+<td><%= v[:type_proc] %></td>
+<td><%= v[:notes] %></td>
+<td><a href="file:///c:/Users/Abdulkareem/Desktop/YSMO/views/images/<%= v[:pic] %>"> 1 </a>
+ -
+  <a href="file:///c:/Users/Abdulkareem/Desktop/YSMO/views/images/<%= v[:pica] %>"> 
+    2 </a>
+  - 
+  <a href="file:///c:/Users/Abdulkareem/Desktop/YSMO/views/images/<%= v[:picb] %>">
+    3 </a>
+  - 
+  <a href="file:///c:/Users/Abdulkareem/Desktop/YSMO/views/images/<%= v[:picc] %>">
+    4 </a>
+  - 
+  <a href="file:///c:/Users/Abdulkareem/Desktop/YSMO/views/images/<%= v[:picd] %>">
+    5 </a>
+  - 
+  <a href="file:///c:/Users/Abdulkareem/Desktop/YSMO/views/images/<%= v[:pice] %>">
+    6 </a>
+</td>
+</tr>
+<% end %>
+    </table>
+  	<table>
+  	</table>
+  </section>
+</body>
+
+
